@@ -124,7 +124,7 @@ Public Class Funcionario
             .WriteEndElement()
             '--------------------------------------
             'agregar la informacion del  usuario
-            .WriteStartElement("Usurio")
+            .WriteStartElement("Usuario")
             .WriteString(Me.strUsuario)
             .WriteEndElement()
             '--------------------------------------
@@ -142,7 +142,7 @@ Public Class Funcionario
         '------------------------------------------------------------------------
         xlmwFuncionario.Flush()
         Dim xmlArchivo As New Datos.ArchivosXml 'escribir en el archivo
-        xmlArchivo.Grabar(mstnArchivo, rutaArchivo)
+        xmlArchivo.Grabar(mstnArchivo, "C:\SistemaMatricula\Funcionarios\" + Me.strUsuario + ".xml")
         xlmwFuncionario.Close() 'cerrar el archivo
     End Sub
 #End Region

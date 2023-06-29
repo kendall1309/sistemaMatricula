@@ -45,6 +45,9 @@ Partial Class FrmRegistrarEstudiantes
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.CLB_PorcentajeBecaEstudiantes = New System.Windows.Forms.CheckedListBox()
         Me.LblPoseBrcaEstudiante = New System.Windows.Forms.Label()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'LblNombreEstudiante
@@ -239,10 +242,11 @@ Partial Class FrmRegistrarEstudiantes
         '
         'DtP_FechaNacimiento
         '
+        Me.DtP_FechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DtP_FechaNacimiento.Location = New System.Drawing.Point(305, 230)
         Me.DtP_FechaNacimiento.Margin = New System.Windows.Forms.Padding(2)
         Me.DtP_FechaNacimiento.Name = "DtP_FechaNacimiento"
-        Me.DtP_FechaNacimiento.Size = New System.Drawing.Size(204, 20)
+        Me.DtP_FechaNacimiento.Size = New System.Drawing.Size(97, 20)
         Me.DtP_FechaNacimiento.TabIndex = 24
         '
         'btnEliminar
@@ -277,12 +281,48 @@ Partial Class FrmRegistrarEstudiantes
         Me.LblPoseBrcaEstudiante.TabIndex = 27
         Me.LblPoseBrcaEstudiante.Text = "Porcentaje de beca"
         '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(472, 51)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton1.TabIndex = 28
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "RadioButton1"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(472, 70)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton2.TabIndex = 29
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "RadioButton2"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(472, 93)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton3.TabIndex = 30
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "RadioButton3"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
         'FrmRegistrarEstudiantes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(558, 436)
+        Me.Controls.Add(Me.RadioButton3)
+        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.LblPoseBrcaEstudiante)
         Me.Controls.Add(Me.CLB_PorcentajeBecaEstudiantes)
         Me.Controls.Add(Me.btnEliminar)
@@ -337,4 +377,7 @@ Partial Class FrmRegistrarEstudiantes
     Friend WithEvents btnEliminar As Button
     Friend WithEvents CLB_PorcentajeBecaEstudiantes As CheckedListBox
     Friend WithEvents LblPoseBrcaEstudiante As Label
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton3 As RadioButton
 End Class

@@ -28,10 +28,14 @@ Partial Class FrmPantall_Principal
         Me.EstudiantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CarrerasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AcercaDeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarCursosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerCursosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcercaDeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistrarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistrarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPrincipal.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,19 +54,21 @@ Partial Class FrmPantall_Principal
         '
         Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FuncionarioToolStripMenuItem, Me.EstudiantesToolStripMenuItem})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
-        Me.RegistrarToolStripMenuItem.Text = "Registrar"
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.RegistrarToolStripMenuItem.Text = "Perfiles"
         '
         'FuncionarioToolStripMenuItem
         '
+        Me.FuncionarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarToolStripMenuItem2, Me.VerToolStripMenuItem1})
         Me.FuncionarioToolStripMenuItem.Name = "FuncionarioToolStripMenuItem"
-        Me.FuncionarioToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.FuncionarioToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.FuncionarioToolStripMenuItem.Text = "Funcionario"
         '
         'EstudiantesToolStripMenuItem
         '
+        Me.EstudiantesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarToolStripMenuItem1, Me.VerToolStripMenuItem})
         Me.EstudiantesToolStripMenuItem.Name = "EstudiantesToolStripMenuItem"
-        Me.EstudiantesToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.EstudiantesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EstudiantesToolStripMenuItem.Text = "Estudiantes"
         '
         'CarrerasToolStripMenuItem
@@ -78,6 +84,18 @@ Partial Class FrmPantall_Principal
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
         Me.AcercaDeToolStripMenuItem.Text = "Cursos"
         '
+        'AgregarCursosToolStripMenuItem
+        '
+        Me.AgregarCursosToolStripMenuItem.Name = "AgregarCursosToolStripMenuItem"
+        Me.AgregarCursosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AgregarCursosToolStripMenuItem.Text = "Agregar cursos"
+        '
+        'VerCursosToolStripMenuItem
+        '
+        Me.VerCursosToolStripMenuItem.Name = "VerCursosToolStripMenuItem"
+        Me.VerCursosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.VerCursosToolStripMenuItem.Text = "ver cursos"
+        '
         'AcercaDeToolStripMenuItem1
         '
         Me.AcercaDeToolStripMenuItem1.Name = "AcercaDeToolStripMenuItem1"
@@ -90,17 +108,29 @@ Partial Class FrmPantall_Principal
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
-        'AgregarCursosToolStripMenuItem
+        'RegistrarToolStripMenuItem1
         '
-        Me.AgregarCursosToolStripMenuItem.Name = "AgregarCursosToolStripMenuItem"
-        Me.AgregarCursosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AgregarCursosToolStripMenuItem.Text = "Agregar cursos"
+        Me.RegistrarToolStripMenuItem1.Name = "RegistrarToolStripMenuItem1"
+        Me.RegistrarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.RegistrarToolStripMenuItem1.Text = "Registrar"
         '
-        'VerCursosToolStripMenuItem
+        'VerToolStripMenuItem
         '
-        Me.VerCursosToolStripMenuItem.Name = "VerCursosToolStripMenuItem"
-        Me.VerCursosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.VerCursosToolStripMenuItem.Text = "ver cursos"
+        Me.VerToolStripMenuItem.Name = "VerToolStripMenuItem"
+        Me.VerToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.VerToolStripMenuItem.Text = "Ver"
+        '
+        'RegistrarToolStripMenuItem2
+        '
+        Me.RegistrarToolStripMenuItem2.Name = "RegistrarToolStripMenuItem2"
+        Me.RegistrarToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.RegistrarToolStripMenuItem2.Text = "Registrar"
+        '
+        'VerToolStripMenuItem1
+        '
+        Me.VerToolStripMenuItem1.Name = "VerToolStripMenuItem1"
+        Me.VerToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.VerToolStripMenuItem1.Text = "Ver"
         '
         'FrmPantall_Principal
         '
@@ -131,4 +161,8 @@ Partial Class FrmPantall_Principal
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AgregarCursosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VerCursosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RegistrarToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents VerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RegistrarToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents VerToolStripMenuItem1 As ToolStripMenuItem
 End Class

@@ -111,7 +111,9 @@ Public Class Estudiante
 
 #End Region
 
-    Public Sub RegistrarEstudiantes(ByVal rutaArchivo As String) ''Metodo para crear y escrubir los datos en Xml
+    Public Sub RegistrarEstudiantes(ByVal Nombre As String, ByVal Apellidos As String,
+                                    ByVal Identificacion As String, ByVal Telefono As String,
+                                            ByVal CorreoElectronico As String, ByVal Dirrecion As String) ''Metodo para crear y escrubir los datos en Xml
 
         Dim mstnArchivo As New MemoryStream
 
@@ -130,12 +132,12 @@ Public Class Estudiante
             '-----------------------------------------------------------
             'agregar la informacion de idenficacion del estudiante
             .WriteStartElement("ID")
-            .WriteString(Me.intIdentificacion)
+            .WriteString(Identificacion)
             .WriteEndElement()
             '--------------------------------------
             'agregar la informacion del  nombre
             .WriteStartElement("Nombre")
-            .WriteString(Me.strNombre)
+            .WriteString(Nombre)
             .WriteEndElement()
             '--------------------------------------
             'agregar la informacion de los apellidos
@@ -190,7 +192,7 @@ Public Class Estudiante
         '--------------------------------------
         xlmwEstudiante.Flush()
         Dim xmlArchivo As New Datos.ArchivosXml 'escribir en el archivo
-        xmlArchivo.Grabar(mstnArchivo, rutaArchivo)
+        xmlArchivo.Grabar(mstnArchivo, "C:\SistemaMatricula\Estudiantes\" + Identificacion + ".xml")
         '--------------------------------------
         xlmwEstudiante.Close() 'cerrar el archivo
     End Sub
