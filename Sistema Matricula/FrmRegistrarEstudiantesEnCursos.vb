@@ -14,7 +14,7 @@
                 'Dar edad a base del metodo echo en la clase estudiante
                 iCursos.DtFecha = Me.DTP_FechaRegistrarCursos.Value.Date
 
-                dsaadasd
+
                 'crear la ruta
                 Dim srtRuta As String = System.Configuration.ConfigurationManager.AppSettings("rutaArchivo") 'el nombre que se puso en App.config
 
